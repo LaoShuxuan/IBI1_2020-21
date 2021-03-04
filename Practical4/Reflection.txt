@@ -1,0 +1,2 @@
+When I do the Practical4, I found something challenging that if the Internet is not good how can we continued to finish the tasks.
+And I want to know if using the Cygwin is the best choice to complete the task.
