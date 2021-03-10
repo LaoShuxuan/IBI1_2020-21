@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: 
+# Answer:randomly generate a number from 1 to 100. If the number is less than 50, the number will be imported. If the number is no less than 50, the number will not be imported  
 
 # Import libraries
 # randint allows drawing a random number, 
