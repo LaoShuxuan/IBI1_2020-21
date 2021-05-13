@@ -1,11 +1,26 @@
-I like
-I like
-I like
-I like
-I like
-I like
-I don't like
-I l
-I l
-I l
-I l
+<<<<<<< HEAD
+I like apples
+I like fish
+I like tea
+I like flowers
+I like trees
+I like birds
+I like cows
+I like sheep
+I like watching TV
+I like my bed
+I like eating ice-cream
+=======
+I like trees
+I like birds
+I like cows
+I like sheep
+I like watching TV
+I like my bed
+I like eating ice-cream
+I like swimming
+I like running
+I like biology
+I like singing
+I don't like dancing
+>>>>>>> Alex
