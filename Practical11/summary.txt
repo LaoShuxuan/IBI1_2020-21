@@ -1,0 +1,14 @@
+the alignment score:
+between human and mouse:1091
+between human and random sequence:-250
+between mouse and random sequence:-250
+
+the percentage of identical amino acids for each comparison:
+human-mouse:89.6396396%
+human-random:5.4054054%
+mouse-random:5.8558558%
+
+Interpretation:
+The alignment scores demonstrate the biological relevance of different proteins.The higher the score is, the more close the relationship between two proteins is.
+The alignment score and also the identical percentage between human and mouse are very high, which shows human and mouse are closely relevant.According to the theory of origin of species, all species came from one species. So it is likely that SOD2 proteins are largely same in mammals.
+While the alignment score and identical percentage for either human or mouse compared to the random sequence are very low, which show their biological relevance is little. Maybe the random sequence comes from other proteins except SOD2 proteins.
