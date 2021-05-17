@@ -1,0 +1,6 @@
+Question: What was the situation of new cases over time in Suriname?
+
+line number: line 39-47
+
+Result: The plot shows that there were some new cases before March 25th, 2020 in Suriname. But new cases were steadily
+zero afterwards, which meant maybe the covid-19 epidemic is gradually improving.
