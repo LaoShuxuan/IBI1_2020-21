@@ -59,16 +59,17 @@ def childnodes_number(terms,biomolecule):
     num = len(set(c))
     return num
 
-# get the number of childnodes of DNA, RNA, protein, and carbohydrate.
+# get and print the number of childnodes of DNA, RNA, protein, and carbohydrate.
 DNA = childnodes_number(terms,"DNA")
-RNA = childnodes_number(terms,"RNA")
-Protein = childnodes_number(terms,"protein")
-Carbohydrate = childnodes_number(terms,"carbohydrate")
-#print all the results
 print("The number of childNodes of all DNA-associated terms is:", DNA)
+RNA = childnodes_number(terms,"RNA")
 print("The number of childNodes of all RNA-associated terms is:", RNA)
+Protein = childnodes_number(terms,"protein")
 print("The number of childNodes of all protein-associated terms is:", Protein)
+Carbohydrate = childnodes_number(terms,"carbohydrate")
 print("The number of childNodes of all carbohydrate-associated terms is:", Carbohydrate)
+
+
 
 
 #make a pie chart
