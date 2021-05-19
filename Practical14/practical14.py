@@ -18,7 +18,7 @@ terms = root.getElementsByTagName("term")
 def id_found(terms):
     dict={}
     for term in terms:
-        #search all the terms with "is_a", also all the id
+        #search all the terms with "is_a" and also all the id
         is_a = [child.childNodes[0].data for child in term.getElementsByTagName("is_a")]
         all_id = term.getElementsByTagName("id")[0].childNodes[0].data
         for id_fa in is_a:
@@ -28,12 +28,12 @@ def id_found(terms):
                 dict[id_fa] = [all_id]
     return dict
 
-#define a function which is to search the terms which are related to DNA,RNA or other biomolecules
+#define a function to search the terms which are related to DNA, RNA, protein and other biomolecules
 def related(terms,biomolecule):
     gene = []
     for term in terms:
         defstr = term.getElementsByTagName("defstr")[0].childNodes[0].data
-        #find the id which is related to specific molecule
+        #find the id related to specific molecule
         id_link = term.getElementsByTagName("id")[0].childNodes[0].data
         if not biomolecule.isupper():
             defstr = defstr.lower()
@@ -59,12 +59,12 @@ def childnodes_number(terms,biomolecule):
     num = len(set(c))
     return num
 
-# get the number of childnodes of DNA, RNA, Protein, and Carbohydrate.
+# get the number of childnodes of DNA, RNA, protein, and carbohydrate.
 DNA = childnodes_number(terms,"DNA")
 RNA = childnodes_number(terms,"RNA")
 Protein = childnodes_number(terms,"protein")
 Carbohydrate = childnodes_number(terms,"carbohydrate")
-#print the results
+#print all the results
 print("The number of childNodes of all DNA-associated terms is:", DNA)
 print("The number of childNodes of all RNA-associated terms is:", RNA)
 print("The number of childNodes of all protein-associated terms is:", Protein)
