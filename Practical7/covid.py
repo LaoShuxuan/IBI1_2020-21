@@ -12,7 +12,7 @@ print(s)
 d = covid_data.loc[(covid_data.loc[:, "location"] == "Afghanistan"), "total_cases"]
 print(d)
 
-
+#calculate some important numbers
 e = covid_data.loc[(covid_data.loc[:, "location"] == "World"), "new_cases"]
 a = np.array(e)
 b = np.mean(a)
@@ -20,6 +20,7 @@ c = np.median(a)
 print(b)
 print(c)
 
+#draw the boxplot of world new cases
 f = covid_data.loc[(covid_data.loc[:, "location"] == "World"), "new_cases"]
 score1 = f
 color = ['pink']
@@ -29,6 +30,7 @@ plt.ylabel("new cases")
 plt.boxplot(score1, notch=False, vert=True, whis=1.5, patch_artist=True, meanline=True, showbox=True, showfliers=True)
 plt.show()
 
+#draw the plot of world new cases and world new deaths
 g = covid_data.loc[(covid_data.loc[:,"location"] == "World"), "new_deaths"]
 plt.title("new cases and new deaths worldwide")
 plt.xlabel("world new cases")
